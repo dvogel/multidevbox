@@ -26,7 +26,7 @@ curl -sS https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb -o e
 
 # dotnet instructions modified from
 # https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial
-curl -sS https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -o packages-microsoft-prod.deb \
+curl -sS https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -o packages-microsoft-prod.deb \
   && dpkg -i packages-microsoft-prod.deb \
   && rm packages-microsoft-prod.deb
 
@@ -45,7 +45,7 @@ apt-get install -y git bash-completion make build-essential libssl-dev \
   elixir \
   esl-erlang \
   nginx \
-  oracle-java12-installer oracle-java12-set-default maven \
+  oracle-java14-installer oracle-java14-set-default maven \
   php7.3 php7.3-mbstring \
   ponyc \
   runit \
@@ -61,5 +61,3 @@ curl -sS https://dl.google.com/go/go1.12.1.linux-amd64.tar.gz | tar -C /usr/loca
 curl -sSL https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -o /usr/bin/lein && \
     chmod a+x /usr/bin/lein && \
     /usr/bin/lein
-
-sudo apt-get -y install ponyc
